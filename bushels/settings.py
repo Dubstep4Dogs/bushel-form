@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "dev-insecure")
 # DEBUG = os.getenv("DEBUG", "0") == "1"
 DEBUG = True
 
-raw_hosts = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1")
+raw_hosts = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1,bushel-form.onrender.com")
 ALLOWED_HOSTS = [h.strip() for h in raw_hosts.split(",") if h.strip()]
 
 raw_csrf = os.getenv("CSRF_TRUSTED_ORIGINS", "")
