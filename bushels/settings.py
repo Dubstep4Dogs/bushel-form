@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "dev-insecure")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = os.getenv("DEBUG", "0") == "1"
-DEBUG = True
+DEBUG = False
 
 raw_hosts = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1,bushel-form.onrender.com")
 ALLOWED_HOSTS = [h.strip() for h in raw_hosts.split(",") if h.strip()]
